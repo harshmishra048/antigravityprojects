@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-nebula-900 text-nebula-light antialiased;
+    overflow-x: hidden;
+  }
+
+  /* Custom Scrollbar for Webkit */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-nebula-900;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-nebula-800 rounded-full hover:bg-gray-700;
+  }
+}
